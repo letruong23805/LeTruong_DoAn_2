@@ -1,0 +1,42 @@
+.thangh {
+  width: 1000px;
+  margin: 0 auto;
+}
+.thangh > .nutban {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+.thangh > .nutban > button {
+  width: 150px;
+  height: 35px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  background-color: #ff0000;
+  color: white;
+  cursor: pointer;
+}
+.nutban > button:hover {
+  background-color: #a70404;
+}
+.nutban > button > a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+}
+.thanhtien > p {
+  margin-top: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+  height: 30px;
+  width: 300px;
+  background-color: #ff6600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  color: white;
+}

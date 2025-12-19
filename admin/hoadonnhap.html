@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <div class="trangthai">
+      <ul>
+        <li>
+          Xin chào
+          <ul class="menu2">
+            <li><a href="">Đăng xuất</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="trang">
+      <div class="menu">
+        <ul>
+          <li><a href="taikhoan.html">Quản lý tài khoản</a></li>
+          <li><a href="nhanvien.html">Quản lý nhà nhân viên</a></li>
+          <li><a href="nhacc.html">Quản lý nhà cung cấp</a></li>
+          <li><a href="loaisp.html">Quản lý loại máy tính</a></li>
+          <li><a href="sanpham.html">Quản lý máy tính</a></li>
+          <li><a href="khachhang.html">Quản lý khách hàng</a></li>
+          <li><a href="">Quản lý hóa đơn nhập</a></li>
+          <li><a href="hoadonban.html">Quản lý hóa đơn bán</a></li>
+          <li><a href="loaibaohanh.html">Quản lý loại bảo hành</a></li>
+          <li><a href="baohanh.html">Quản lý bảo hành</a></li>
+          <li><a href="Baocao.html">Báo cáo thống kê</a></li>
+        </ul>
+      </div>
+      <div class="thongtin">
+        <div class="thanh"><h2>Nhập thông tin hóa đơn nhập</h2></div>
+        <p>Mã hóa đơn:</p>
+        <input type="text" placeholder="Nhập mã hóa đơn" />
+        <p>Tên nhà cung cấp:</p>
+        <select id="ncc">
+          <option value="">---Chọn nhà cung cấp---</option>
+        </select>
+        <p>Tên nhân viên:</p>
+        <select id="nv">
+          <option value="">---Chọn nhân viên---</option>
+        </select>
+        <p>Ngày nhập:</p>
+        <input type="date" placeholder="Chọn ngày nhập" />
+        <hr />
+        <table class="bang" id="themsp">
+          <tr>
+            <th>Mã sản phẩm</th>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Đơn giá</th>
+            <th>Thao tác</th>
+          </tr>
+        </table>
+        <div class="nut">
+          <button class="nut4">Thêm máy tính</button>
+        </div>
+        <p>Tổng tiền:</p>
+        <input type="text" id="tongTien" readonly />
+        <hr />
+        <div class="nut">
+          <button class="nut1">Thêm hóa đơn nhập</button>
+          <button class="nut2">Sửa hóa đơn nhập</button>
+          <button class="nut3">Xóa hóa đơn nhập</button>
+        </div>
+      </div>
+      <div class="danhsach">
+        <div class="thanh"><h2>Danh sách hóa đơn bán nhập</h2></div>
+        <div class="timkiem">
+          <input type="text" placeholder="Nhập mã, Tên loại bảo hành" />
+          <button>Tìm kiếm</button>
+        </div>
+
+        <table class="bang" id="bangHD">
+          <tr>
+            <th>Mã hóa đơn</th>
+            <th>Tên nhà cung cấp</th>
+            <th>Tên nhân viên</th>
+            <th>Ngày nhập</th>
+            <th>Tổng tiền</th>
+            <th>Thao tác</th>
+          </tr>
+        </table>
+        <div class="dautrang">
+          <ul>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="hoadonnhap.js"></script>
+</html>

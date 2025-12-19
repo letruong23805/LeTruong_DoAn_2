@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+/* body {
+  background-image: url(./img/login.jpg);
+  background-size: cover;
+   background-position-y: -100px; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;  Ảnh cố định khi cuộn 
+  background-position: center;
+} */
+.khung {
+  /* min-height: 100vh; */
+  margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form-login {
+  width: 400px;
+  height: 500px;
+  border: 1px solid #ddd;
+  /* margin: 0 auto; */
+  /* backdrop-filter: blur(10px); */
+  box-shadow: 5px 10px 11px 5px darkgray;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 30px;
+}
+#form-login > h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#form-login > .login {
+  line-height: 30px;
+}
+#form-login > .login > p {
+  text-transform: uppercase;
+  font-size: 18;
+}
+#form-login > .login > input {
+  width: 350px;
+  height: 34px;
+  padding: 0px 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-size: 18px;
+  border: 1px solid beige;
+}
+#form-login > .login > input::placeholder {
+  text-transform: capitalize;
+}
+.ghichu {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.ghichu > p > a {
+  padding: 0px 10px;
+  text-decoration: none;
+  color: black;
+}
+.ghichu > p > a:hover {
+  color: red;
+}
+#form-login > button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 30px;
+  width: 180px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+#form-login > button:hover {
+  background-color: rgb(223, 145, 50);
+  color: white;
+}

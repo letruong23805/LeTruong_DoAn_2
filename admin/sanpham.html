@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý máy tính</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+
+  <body>
+    <div class="trangthai">
+      <ul>
+        <li>
+          Xin chào
+          <ul class="menu2">
+            <li><a href="">Đăng xuất</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="trang">
+      <div class="menu">
+        <ul>
+          <li><a href="taikhoan.html">Quản lý tài khoản</a></li>
+          <li><a href="nhanvien.html">Quản lý nhân viên</a></li>
+          <li><a href="nhacc.html">Quản lý nhà cung cấp</a></li>
+          <li><a href="loaisp.html">Quản lý loại máy tính</a></li>
+          <li><a href="sanpham.html">Quản lý máy tính</a></li>
+          <li><a href="khachhang.html">Quản lý khách hàng</a></li>
+          <li><a href="hoadonban.html">Quản lý hóa đơn nhập</a></li>
+          <li><a href="hoadonnhap.html">Quản lý hóa đơn bán</a></li>
+          <li><a href="loaibaohanh.html">Quản lý loại bảo hành</a></li>
+          <li><a href="baohanh.html">Quản lý bảo hành</a></li>
+          <li><a href="Baocao.html">Báo cáo thống kê</a></li>
+        </ul>
+      </div>
+
+      <div class="thongtin">
+        <div class="thanh"><h2>Nhập thông tin máy tính</h2></div>
+
+        <p>Mã máy tính:</p>
+        <input id="ma" type="text" placeholder="Nhập mã máy tính" />
+
+        <p>Tên máy tính:</p>
+        <input id="ten" type="text" placeholder="Nhập tên máy tính" />
+
+        <p>Loại máy tính:</p>
+        <select id="loai">
+          <option value="">---Chọn loại máy tính---</option>
+        </select>
+
+        <p>Nhà cung cấp:</p>
+        <select id="ncc">
+          <option value="">---Chọn nhà cung cấp---</option>
+        </select>
+
+        <p>Hình ảnh</p>
+        <div class="khunginput">
+          <input
+            id="duongdan"
+            type="text"
+            placeholder="Chọn hình ảnh máy tính"
+          />
+          <button id="btnChonAnh" class="chonanh">Chọn ảnh</button>
+          <input type="file" id="chonfile" accept="image/*" hidden />
+          <img id="preview" src="" width="150" />
+        </div>
+
+        <p>Số lượng:</p>
+        <input
+          id="soluong"
+          type="number"
+          placeholder="Nhập số lượng máy tính"
+        />
+
+        <p>Giá bán:</p>
+        <input id="gia" type="number" placeholder="Nhập giá bán máy tính" />
+
+        <hr />
+
+        <div class="nut">
+          <button class="nut1">Thêm máy tính</button>
+          <button class="nut2">Sửa máy tính</button>
+          <button class="nut3">Xóa máy tính</button>
+        </div>
+      </div>
+
+      <div class="danhsach">
+        <div class="thanh"><h2>Danh sách máy tính</h2></div>
+
+        <div class="timkiem">
+          <input type="text" placeholder="Nhập mã, Tên máy tính" />
+          <button>Tìm kiếm</button>
+        </div>
+
+        <table class="bang">
+          <!-- JS sẽ tự đổ dữ liệu -->
+        </table>
+      </div>
+    </div>
+
+    <script src="sanpham.js"></script>
+  </body>
+</html>

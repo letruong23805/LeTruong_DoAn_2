@@ -1,0 +1,96 @@
+.cot {
+  display: grid;
+  grid-template-columns: auto;
+}
+.spbanchay {
+  height: auto;
+}
+.spbanchay h2 {
+  margin: 25px 30px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(83, 229, 180);
+  color: white;
+  width: 300px;
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+.spbanchay table {
+  margin-left: 30px;
+  width: 1100px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.mau1 h2 {
+  background-color: rgb(254, 49, 49);
+  font-size: 20px;
+  align-items: center;
+}
+.mau2 h2 {
+  background-color: rgb(254, 162, 49);
+  font-size: 20px;
+  align-items: center;
+  width: 150px;
+}
+.bieudo-thang {
+  margin-left: 150px;
+  display: flex;
+  gap: 25px;
+  align-items: flex-end;
+  height: 350px;
+  width: 800px;
+  border: 2px solid black;
+  padding-left: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.cotbieudo {
+  text-align: center;
+}
+
+.thanh {
+  width: 40px;
+  background-color: #00a2ff;
+  border-radius: 5px 5px 0 0;
+}
+
+.cotbieudo p {
+  margin-top: 5px;
+  font-weight: bold;
+}
+.thmot {
+  height: 100px;
+}
+.thhai {
+  height: 150px;
+}
+.thba {
+  height: 130px;
+}
+.thbon {
+  height: 180px;
+}
+.thnam {
+  height: 50px;
+}
+.thsau {
+  height: 190px;
+}
+.thbay {
+  height: 200px;
+}
+.thtam {
+  height: 210px;
+}
+.thchin {
+  height: 110px;
+}
+.thmuoi {
+  height: 120px;
+}
+.thmotmot {
+  height: 90px;
+}
+.thmuoihai {
+  height: 100px;
+}

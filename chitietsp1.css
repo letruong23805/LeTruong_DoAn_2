@@ -1,0 +1,70 @@
+.thanctsp {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+.anhct {
+  width: 400px;
+}
+.anhct > img {
+  width: 380px;
+  height: 450px;
+  padding: 10px 0px 10px 15px;
+}
+.chitietsp {
+  width: 600px;
+}
+.chitietsp > h3 {
+  margin: 10px 0px;
+  text-transform: uppercase;
+}
+.giab {
+  display: flex;
+  margin: 5px 0px;
+}
+.giab > p {
+  font-size: 20px;
+}
+.giab > h3 {
+  color: red;
+  padding: 0px 0px 0px 5px;
+}
+.nutbamctsp {
+  display: flex;
+  margin-top: 10px;
+}
+.nutbamctsp button {
+  margin: 0px 10px 0px 0px;
+  height: 35px;
+  width: 175px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#btnThem {
+  background-color: chocolate;
+  color: white;
+}
+#btmthemtg {
+  background-color: dodgerblue;
+}
+#btmthemtg > a {
+  text-decoration: none;
+  color: white;
+}
+.khungctsp {
+  margin: 15px 15px 15px 0px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+.khungctsp p {
+  line-height: 27px;
+}

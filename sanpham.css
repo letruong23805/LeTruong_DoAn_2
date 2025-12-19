@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.pagination > ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+.pagination > ul > li {
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.pagination > ul > li > a {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.pagination > ul > li:hover {
+  background-color: red;
+}
+.pagination > ul > li:hover a {
+  color: white;
+}

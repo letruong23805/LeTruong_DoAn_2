@@ -1,0 +1,412 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  background-color: red;
+}
+.thanh {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+.logo > a > img {
+  height: 70px;
+  width: 150px;
+}
+.timkiem {
+  display: flex;
+  align-items: center;
+  margin-left: 130px;
+}
+.timkiem > input {
+  width: 400px;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+.timkiem > .fa-search {
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: -25px;
+  color: rgb(229, 87, 87);
+}
+.giohang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 130px;
+  font-size: 30px;
+}
+.giohang a {
+  color: white;
+}
+.giohang i {
+  transition: transform 0.3s ease, color 0.3s ease; /* hiệu ứng mượt */
+  cursor: pointer;
+}
+
+.giohang i:hover {
+  transform: scale(1.2); /* phóng to 1.2 lần */
+}
+.dangnhap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 90px;
+  font-size: 30px;
+}
+.dangnhap > a {
+  color: white;
+}
+nav {
+  background-color: rgb(238, 125, 12);
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+.menu {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+.menu > ul {
+  display: flex;
+  list-style-type: none;
+  height: 40px;
+}
+.menu > ul > li {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid white;
+}
+.menu > ul > li > a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu > ul > li:last-child {
+  border-right: none;
+}
+.menu > ul > li:hover {
+  background-color: rgb(229, 200, 37);
+}
+.boxmenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+}
+.boxmenu > li {
+  width: 200px;
+  height: 40px;
+  background-color: rgb(238, 125, 12);
+  border-bottom: 1px solid;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  text-transform: uppercase;
+}
+.boxmenu > li > a {
+  text-decoration: none;
+  color: white;
+}
+.boxmenu > li:hover {
+  background-color: rgb(229, 200, 37);
+}
+.boxmenu > li:last-child {
+  border-bottom: none;
+}
+.menu > ul > li:hover .boxmenu {
+  display: block;
+}
+.than {
+  width: 1000px;
+  margin: 0 auto;
+}
+.slide {
+  position: relative;
+}
+.slide > img {
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.slide img {
+  display: none;
+}
+
+.slide img:first-child {
+  display: block;
+}
+.nutbam {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  padding: 0 15px;
+}
+.nutbam > .left,
+.nutbam > .right {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.674);
+  color: rgb(41, 38, 38);
+  opacity: 0.3;
+}
+.nutbam > .left:hover,
+.nutbam > .right:hover {
+  opacity: 1;
+}
+.banner > img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.thanhsanpham {
+  margin-top: 20px;
+  height: 40px;
+  background-color: rgb(255, 200, 0);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  scroll-margin-top: 60px;
+}
+.thanhsanpham > p {
+  padding: 15px;
+}
+.thansp {
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+.sanpham {
+  width: 240px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 350px;
+  margin-bottom: 20px;
+}
+.sanpham > .anh {
+  border-bottom: 1px solid #ddd;
+  background-size: cover;
+}
+.sanpham > .anh > img {
+  width: 230px;
+  height: 250px;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  object-fit: contain;
+  object-position: center;
+}
+
+.tensp {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.tensp > p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 230px;
+}
+.giasp {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+.nut {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.nut > button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+.nut > .chitiet {
+  background-color: #2980b9;
+  color: white;
+}
+.nut > .chitiet > a {
+  text-decoration: none;
+  color: white;
+}
+.nut > .dathang {
+  background-color: #e74c3c;
+  color: white;
+}
+.nut > .chitiet:hover {
+  background-color: #03314f;
+}
+.nut > .dathang:hover {
+  background-color: #c0392b;
+}
+footer {
+  margin-top: 30px;
+  height: 650px;
+  background-color: rgb(229, 133, 37);
+}
+.cuoi {
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.tt {
+  margin-top: 30px;
+}
+.tt > .chu {
+  font-size: 20px;
+  color: #ddd;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.tt > p > a {
+  text-decoration: none;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: black;
+}
+.thongtin > img {
+  height: 60px;
+  width: 180px;
+  margin-top: 20px;
+}
+.diachi {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0px 0px 0px;
+}
+.diachi > h1 {
+  text-transform: capitalize;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+@media (max-width: 1199px) and (min-width: 768px) {
+  .thanh {
+    width: 750px;
+    margin: 0 auto;
+  }
+  .timkiem > input {
+    width: 270px;
+    margin-left: -50px;
+  }
+  .giohang {
+    margin-left: 80px;
+  }
+  .than {
+    width: 750px;
+    margin: 0 auto;
+  }
+  .thansp {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 750px;
+    margin: 0 auto;
+  }
+  footer {
+    height: 850px;
+  }
+  .cuoi {
+    width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .diachi {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px 0px 0px 0px;
+  }
+  .diachi > iframe {
+    width: 700px;
+  }
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .thanh {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .timkiem > input {
+    width: 200px;
+    margin-left: -100px;
+  }
+  .giohang {
+    margin-left: 20px;
+  }
+  .dangnhap {
+    margin-left: 20px;
+  }
+  .than {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .slide > img {
+    height: 300px;
+  }
+  .thansp {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 500px;
+    margin: 0 auto;
+  }
+  footer {
+    height: 850px;
+  }
+  .cuoi {
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .diachi {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px 0px 0px 0px;
+  }
+  .diachi > iframe {
+    width: 500px;
+  }
+}
